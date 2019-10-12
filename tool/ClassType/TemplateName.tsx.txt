@@ -1,0 +1,23 @@
+import React from 'react'
+import { observer, inject } from 'mobx-react'
+import { toJS } from 'mobx'
+import { Button } from 'antd'
+import styles from './index.scss'
+
+export interface IProps extends IStore {}
+
+@inject('routerStore')
+@observer
+class ${TemplateName} extends React.Component<IProps> {
+    state = { }
+
+    render() {
+        return (
+            <div className={styles.${TemplateName}}>
+                
+            </div>
+        )
+    }
+}
+
+export default ${TemplateName}

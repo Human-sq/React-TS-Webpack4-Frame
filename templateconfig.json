@@ -1,0 +1,5 @@
+{
+    "templatepath": "tool",
+    "componentPlacementPath": "src",
+    "filterPath": ["src/containers/views", "src/containers/shared", "src/store", "src/utils"]
+}
