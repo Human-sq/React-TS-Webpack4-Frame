@@ -1,0 +1,24 @@
+import React from 'react'
+import { observer } from 'mobx-react'
+import { toJS } from 'mobx'
+import { Button } from 'antd'
+import styles from './index.scss'
+import { RootContext } from '@shared/App/Provider'
+
+interface IProps {}
+
+@observer
+class ${TemplateName} extends React.Component<IProps> {
+    static contextType = RootContext
+    state = { }
+
+    render() {
+        return (
+            <div className={styles.${TemplateName}}>
+                
+            </div>
+        )
+    }
+}
+
+export default Wrapper

@@ -1,0 +1,22 @@
+import React from 'react'
+import { observer, inject } from 'mobx-react'
+import { toJS } from 'mobx'
+import { Button } from 'antd'
+import styles from './index.scss'
+// import { useOnMount } from '@utils/hooks'
+import useRootStore from '@store/useRootStore'
+
+interface IProps {}
+
+function ${TemplateName}({ }: IProps) {
+    // useOnMount()
+    const { authStore, routerStore } = useRootStore()
+
+    return (
+        <div className={styles.${TemplateName}}>
+                
+        </div>
+    )
+}
+
+export default observer(${TemplateName})

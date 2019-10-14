@@ -1,0 +1,19 @@
+@import '_base.scss';
+
+.logo {
+    display: flex;
+    height: 45px;
+    padding: 4px 0;
+    cursor: pointer;
+    justify-content: center;
+    margin-bottom: 0;
+    background-color: #393e46;
+
+    img {
+        height: 100%;
+    }
+}
+
+.menu {
+    flex: 1;
+}

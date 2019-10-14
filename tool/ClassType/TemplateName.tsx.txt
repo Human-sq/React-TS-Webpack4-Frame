@@ -1,0 +1,36 @@
+import React from 'react'
+import { observer } from 'mobx-react'
+import { toJS } from 'mobx'
+import { Button } from 'antd'
+import styles from './index.scss'
+import { RootConsumer } from '@shared/App/Provider'
+
+interface IProps extends IStore {}
+
+@observer
+class ${TemplateName} extends React.Component<IProps> {
+    state = { }
+
+    render() {
+        return (
+            <div className={styles.${TemplateName}}>
+                
+            </div>
+        )
+    }
+}
+
+function Wrapper({  }: IProps) {
+    return (
+        <RootConsumer>
+            {({ routerStore, authStore }) => (
+                <${TemplateName}
+                    routerStore={routerStore}
+                    authStore={authStore}
+                />
+            )}
+        </RootConsumer>
+    )
+}
+
+export default Wrapper

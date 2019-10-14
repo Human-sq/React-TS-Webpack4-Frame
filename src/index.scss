@@ -1,0 +1,99 @@
+@import '_base.scss';
+
+:global {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    #app {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    svg,
+    svg path {
+        fill: currentcolor;
+    }
+
+    .ant-layout-sider,
+    .ant-menu-dark,
+    .ant-menu-dark .ant-menu-sub {
+        background-color: #1f2427 !important;
+    }
+
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+        background-color: #222524 !important;
+    }
+
+    .ant-layout-sider-trigger {
+        background: #29313a !important;
+    }
+
+    .ant-tabs-nav {
+        padding-left: 20px !important;
+    }
+
+    .ant-tabs-bar {
+        margin: 0 !important;
+        background-color: #fff !important;
+    }
+
+    .ant-menu-item {
+        margin: 0 !important;
+    }
+
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+        padding: 0 !important;
+        font-size: 12px !important;
+        font-family:
+            'Helvetica Neue',
+ Arial,
+ 'PingFang SC',
+ 'Hiragino Sans GB',
+ 'Microsoft YaHei',
+ '微软雅黑',
+ Heiti,
+            '黑体',
+ sans-serif !important;
+        line-height: 34px !important;
+    }
+
+    .ant-modal-close-x {
+        width: 42px !important;
+        height: 43px !important;
+        line-height: 43px !important;
+    }
+
+    .ant-modal-body {
+        padding: 14px !important;
+    }
+
+    .ant-form-item {
+        margin-bottom: 4px !important;
+    }
+
+    .ant-modal-header {
+        padding: 10px 16px !important;
+    }
+
+    .ant-table-tbody > tr > td:nth-child(1),
+    .ant-table-thead > tr > th:nth-child(1) {
+        padding-left: 20px !important;
+    }
+
+    .highlight {
+        color: #f50 !important;
+    }
+
+    .Panel {
+        padding: 10px;
+        margin: 10px;
+        background: #fff;
+    }
+}
